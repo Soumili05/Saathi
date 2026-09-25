@@ -11,7 +11,4 @@ dist
 .vite
 .copy-ok
 demo/
-deck/unpacked
-deck/slides
-deck/*.pptx
 ._*

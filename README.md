@@ -10,7 +10,7 @@ This is the smallest shippable product that can be judged — not a finished the
 |---|---|
 | **Live** | [https://saath-81jt.onrender.com](https://saath-81jt.onrender.com) |
 | **Source** | [github.com/somuai/Saathi](https://github.com/somuai/Saathi) |
-| **Companion** | Maya (Tavus PAL `pe877b0fc929`, Mary–Home, Hindi + English). Maker page: [Maya Link](https://maker.tavus.io/deployments/7b2b95a3-b71f-4488-8606-aaeaf168e2f2) |
+| **Companion** | Maya (Tavus PAL `pe877b0fc929`, Mary–Home, Hindi + English). Maker page: [Maya Link](https://maker.tavus.io/deployments/4662c7b4-f80b-4a73-ad5d-eb8468c89dab) |
 | **North star** | `call_started` — live video rooms that actually open |
 
 ---
@@ -136,7 +136,6 @@ Vite + React client · Express `/api` · Tavus CVI (PAL `pe877b0fc929`) · Gemin
 client/src     landing, call room, sitting note, Pulse, Observatory
 server/        conversation create, transcript → note, events
 server/observatory   MSSR, safety, eval bench, experiments
-deck/          pitch copy + slide images
 ```
 
 ### Observatory (product KPIs)
@@ -205,8 +204,4 @@ Do not put keys in git. Rotate any key that has been pasted into chat.
 
 ## Pitch
 
-- Copy: `deck/SAATH-PITCH-SLIDES.md`  
-- Slide images: `deck/slide-images/`  
-- Video script: `deck/PITCH-VIDEO-SCRIPT.md`  
-- Knowledge sources: `deck/KNOWLEDGE.md`
 

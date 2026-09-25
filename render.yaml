@@ -14,8 +14,8 @@ services:
       - key: TAVUS_API_KEY
         sync: false
       - key: TAVUS_PAL_ID
-        value: pe877b0fc929
+        value: p92c2102d569
       - key: TAVUS_DEPLOYMENT_ID
-        value: 7b2b95a3-b71f-4488-8606-aaeaf168e2f2
+        value: 4662c7b4-f80b-4a73-ad5d-eb8468c89dab
       - key: PUBLIC_ORIGIN
         sync: false

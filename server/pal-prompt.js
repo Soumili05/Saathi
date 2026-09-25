@@ -1,9 +1,9 @@
 export const PAL_NAME = 'Maya';
 export const PRODUCT_NAME = 'Saathi';
-export const PAL_ID = 'pe877b0fc929';
-export const PAL_DEPLOYMENT_ID = '7b2b95a3-b71f-4488-8606-aaeaf168e2f2';
+export const PAL_ID = 'p92c2102d569';
+export const PAL_DEPLOYMENT_ID = '4662c7b4-f80b-4a73-ad5d-eb8468c89dab';
 export const PAL_DEPLOYMENT_URL =
-  'https://maker.tavus.io/deployments/7b2b95a3-b71f-4488-8606-aaeaf168e2f2';
+  'https://maker.tavus.io/deployments/4662c7b4-f80b-4a73-ad5d-eb8468c89dab';
 
 export const CALL_LIMIT_SECONDS = 300;
 

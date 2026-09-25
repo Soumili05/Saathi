@@ -222,6 +222,7 @@ export async function avatarSessionHandler(req, res) {
   const tavusKey = process.env.TAVUS_API_KEY;
   const palId = process.env.TAVUS_PAL_ID;
   const deploymentId = process.env.TAVUS_DEPLOYMENT_ID || PAL_DEPLOYMENT_ID;
+  const originHost = process.env.PUBLIC_ORIGIN || 'http://127.0.0.1:5173';
   const ageId = String(req.body?.ageId || 'unspecified').slice(0, 20);
   const lossId = String(req.body?.lossId || 'unspecified').slice(0, 20);
 
@@ -230,6 +231,7 @@ export async function avatarSessionHandler(req, res) {
       const headers = {
         'Content-Type': 'application/json',
         'x-api-key': tavusKey,
+        Origin: originHost,
       };
       // Free tier allows one live room. End leftover calls first.
       const open = await fetch('https://tavusapi.com/v2/conversations?status=active&limit=20', { headers });
@@ -255,7 +257,7 @@ export async function avatarSessionHandler(req, res) {
       if ((!response || !response.ok) && palId) {
         response = await fetch('https://tavusapi.com/v2/conversations', {
           method: 'POST',
-          headers,
+          headers: { ...headers, Origin: originHost },
           body: JSON.stringify({
             pal_id: palId,
             conversation_name: 'Saathi',
